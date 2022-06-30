@@ -6,8 +6,6 @@ Rails.application.routes.draw do
 
   get "/AllProducts", controller: "products", action: "all_products_method"
 
-  get "/firstmethod", controller: "products", action: "first_method"
-
-  get "/secondmethod", controller: "products", action: "second_method"
+  get "/product/:id", controller: "products", action: "product_method"
 
 end
