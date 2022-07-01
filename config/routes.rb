@@ -5,11 +5,10 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   # get "/products", controller: "products", action: "index"
-  get "products" => "products#index"
+  get "/products" => "products#index"
 
-  get "/products/:id", controller: "products", action: "show"
-  # get "products" => "products#show"
-
+  # get "/products/:id", controller: "products", action: "show"
+  get "/products/:id" => "products#show"
 
   # post "/products", controller: "products", action: "create"
   post "/products" => "products#create"
