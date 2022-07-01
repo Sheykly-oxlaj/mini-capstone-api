@@ -22,9 +22,10 @@ class ProductsController < ApplicationController
 
   def create 
     product = Product.new(
-      name: "Air Jordan 1 Dark Mocha",
-      price: 460,
-      description: "This OG AJ1 employs a new twist on a familiar colour scheme: dark mocha. Continuing its rich history with the Jordan Brand, the crisp mocha colour blocking on soft nubuck leather gives this OG a clean and subtle look.")
+      name: params ["name"],
+      price: params ["price"],
+      image_url: params ["image_url"],
+      description: ["description"])
     product.save 
     render json: product.as_json
   end 
