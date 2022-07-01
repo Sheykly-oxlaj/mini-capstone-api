@@ -24,4 +24,8 @@ Content-Type: application/json
   "name": "Nike Air Jordan 1 Mid Fearless; Maison Château Rouge"
 }
 
+### Products delete
+DELETE http://localhost:3000/products/4.json
+
+
 
