@@ -23,12 +23,21 @@ Content-Type: application/json
 }
 
 ### Products update
-PATCH http://localhost:3000/products/4.json
+# PATCH http://localhost:3000/products/4.json
+# Content-Type: application/json
+
+# {
+#   "name": "Nike Air Jordan 1 Mid Fearless; Maison Château Rouge"
+# }
+
+PATCH http://localhost:3000/products/9.json
 Content-Type: application/json
 
 {
-  "name": "Nike Air Jordan 1 Mid Fearless; Maison Château Rouge"
+  "name": "Air Jordan 4 Retro, 'White Oreo'"
 }
+
+
 
 ### Products delete
 DELETE http://localhost:3000/products/4.json
