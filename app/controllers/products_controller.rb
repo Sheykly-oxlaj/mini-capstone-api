@@ -21,13 +21,13 @@ class ProductsController < ApplicationController
   # end 
 
   def create 
-    product = Product.create(
+    @product = Product.create(
       name: params["name"],
       price: params["price"],
       image_url: params["image_url"],
       description: params["description"])
-    product.save 
-    render json: product.as_json
+    @product.save 
+    render template: "products/show"
   end 
 
   def update

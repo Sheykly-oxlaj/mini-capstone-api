@@ -10,10 +10,16 @@ GET http://localhost:3000/products/5.json
 
 ### Products create
 
+# POST  http://localhost:3000/products.json
+# Content-Type: application/json
+
+# {"name": "AIR JORDAN 1 X OFF-WHITE, 'Euro Release'", "price": 6690, "image_url": "https://images.unsplash.com/photo-1622831617330-bc799d6236b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80", "description": "Virgil Abloh continued to focus his design attention on the Air Jordan 1 in 2018 by dropping a massively anticipated white colorway. The Air Jordan 1 x Off-White “White” was even harder to come by than the initial “Chicago” colorway that came out in 2017. The white version released exclusively at select retailers in Europe, and instantly became one of the most sought after sneaker releases of the year."
+# }
+
 POST  http://localhost:3000/products.json
 Content-Type: application/json
 
-{"name": "AIR JORDAN 1 X OFF-WHITE, 'Euro Release'", "price": 6690, "image_url": "https://images.unsplash.com/photo-1622831617330-bc799d6236b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80", "description": "Virgil Abloh continued to focus his design attention on the Air Jordan 1 in 2018 by dropping a massively anticipated white colorway. The Air Jordan 1 x Off-White “White” was even harder to come by than the initial “Chicago” colorway that came out in 2017. The white version released exclusively at select retailers in Europe, and instantly became one of the most sought after sneaker releases of the year."
+{"name": "AIR JORDAN 4 Retro, 'White Oreo'", "price": 510, "image_url": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/054/790/005/original/697107_01.jpg.jpeg?action=crop&width=950", "description": "The Air Jordan 4 Retro ‘White Oreo’ features a design theme that recalls the original ‘Oreo’ AJ4 from 1999. The black tumbled leather upper of the older shoe is replaced by a clean white finish, though the speckled molded eyelets in Tech Grey remain the same. The neutral hue is repeated on the Jumpman heel logo and polyurethane midsole, featuring encapsulated Air cushioning in the forefoot and a visible unit under the heel. A second Jumpman adorns the tongue in a contrasting pop of Fire Red."
 }
 
 ### Products update
