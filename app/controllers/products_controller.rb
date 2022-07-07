@@ -3,7 +3,7 @@ class ProductsController < ApplicationController
 
   def index 
     @products = Product.all
-    render template: "products/index"
+    render template: "products/index" 
   end 
   # def all_products_method
   #   products = Product.all
