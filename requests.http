@@ -19,7 +19,7 @@ GET http://localhost:3000/products/5.json
 POST  http://localhost:3000/products.json
 Content-Type: application/json
 
-{"name": "AIR JORDAN 4 Retro, 'White Oreo'", "price": 510, "image_url": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/054/790/005/original/697107_01.jpg.jpeg?action=crop&width=950", "description": "The Air Jordan 4 Retro ‘White Oreo’ features a design theme that recalls the original ‘Oreo’ AJ4 from 1999. The black tumbled leather upper of the older shoe is replaced by a clean white finish, though the speckled molded eyelets in Tech Grey remain the same. The neutral hue is repeated on the Jumpman heel logo and polyurethane midsole, featuring encapsulated Air cushioning in the forefoot and a visible unit under the heel. A second Jumpman adorns the tongue in a contrasting pop of Fire Red."
+{"image_url": "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/054/790/005/original/697107_01.jpg.jpeg?action=crop&width=950"
 }
 
 ### Products update
@@ -30,17 +30,17 @@ Content-Type: application/json
 #   "name": "Nike Air Jordan 1 Mid Fearless; Maison Château Rouge"
 # }
 
-PATCH http://localhost:3000/products/9.json
+PATCH http://localhost:3000/products/10.json
 Content-Type: application/json
 
 {
-  "name": "Air Jordan 4 Retro, 'White Oreo'"
+  "price": "0"
 }
 
 
 
 ### Products delete
-DELETE http://localhost:3000/products/4.json
+DELETE http://localhost:3000/products/.json
 
 
 
