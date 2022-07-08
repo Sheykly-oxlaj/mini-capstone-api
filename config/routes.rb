@@ -1,9 +1,5 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
-
+  
   # get "/products", controller: "products", action: "index"
   get "/products" => "products#index"
 
@@ -16,5 +12,19 @@ Rails.application.routes.draw do
   patch "/products/:id" => "products#update"
 
   delete "/products/:id" => "products#destroy"
+
+
+  # get "/products", controller: "products", action: "index"
+  get "/suppliers" => "suppliers#index"
+
+  # get "/suppliers/:id", controller: "suppliers", action: "show"
+  get "/suppliers/:id" => "suppliers#show"
+
+  # post "/suppliers", controller: "suppliers", action: "create"
+  post "/suppliers" => "suppliers#create"
+
+  patch "/suppliers/:id" => "suppliers#update"
+
+  delete "/suppliers/:id" => "suppliers#destroy"
 
 end
