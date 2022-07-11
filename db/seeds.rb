@@ -23,8 +23,18 @@
 
 
 
-supplier = Supplier.new(name: "Nike", email: "Investor.Relations@nike.com", phone_number: "800-640-8007" )
-supplier.save
+# supplier = Supplier.new(name: "Nike", email: "Investor.Relations@nike.com", phone_number: "800-640-8007" )
+# supplier.save
 
-supplier = Supplier.new(name: "Adidas", email: "support@adidascases.com", phone_number: "800-982-9337")
-supplier.save
+# supplier = Supplier.new(name: "Adidas", email: "support@adidascases.com", phone_number: "800-982-9337")
+# supplier.save
+
+
+image = Image.new(url: "https://images.complex.com/complex/images/c_fill,dpr_auto,f_auto,q_90,w_1400/fl_lossy,pg_1/cc5dvskqjobawc4mbygl/sneakerheads-feature")
+image.save
+
+image = Image.new(url: "https://i.pinimg.com/originals/09/08/c3/0908c3f80ef7f977278c501b9cb2de6e.jpg")
+image.save
+
+image = Image.new(url: "https://i.pinimg.com/736x/b3/f4/d0/b3f4d0dc24a83bb050a356265df18497.jpg")
+image.save

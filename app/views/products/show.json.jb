@@ -2,7 +2,6 @@
   id: @product.id,
   name: @product.name,
   description: @product.description,
-  image_url: @product.image_url,
   price: @product.price,
   friendly_created_at: @product.friendly_created_at,
   is_discounted?: @product.is_discounted?,
@@ -11,4 +10,5 @@
   created_at: @product.created_at,
   updated_at: @product.updated_at,
   supplier: @product.supplier
+  images: @product.images
 }

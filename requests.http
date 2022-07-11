@@ -34,7 +34,7 @@ PATCH http://localhost:3000/products/10.json
 Content-Type: application/json
 
 {
-  "price": "0"
+  "product_id": "0"
 }
 
 
