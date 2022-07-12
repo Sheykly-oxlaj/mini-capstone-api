@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  #Product controllers
+  #Product routes
   # get "/products", controller: "products", action: "index"
   get "/products" => "products#index"
   get "/products/:id" => "products#show"
@@ -8,11 +8,14 @@ Rails.application.routes.draw do
   delete "/products/:id" => "products#destroy"
 
 
-  #Supplier Controllers
+  #Supplier routes
   get "/suppliers" => "suppliers#index"
   get "/suppliers/:id" => "suppliers#show"
   post "/suppliers" => "suppliers#create"
   patch "/suppliers/:id" => "suppliers#update"
   delete "/suppliers/:id" => "suppliers#destroy"
+
+  #User routes
+  post "/users" => "users#create"
 
 end
