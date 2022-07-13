@@ -69,13 +69,13 @@ Content-Type: application/json
 GET  http://localhost:3000/products.json
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTc3MzU3MTZ9.gvm7AJPI9uF4HXTrWH-Fj-y7JNncRNN63J_qKO0TAuU
 
-
+###
 POST http://localhost:3000/orders.json
 Content-Type: application/json
 
 {
-  "user_id": "anna@example.com",
-  "product_id": "password",
+  "user_id": "",
+  "product_id": "12",
   "quantity": "1",
   "subtotal": "570", 
   "tax": "51.3",
