@@ -11,8 +11,7 @@ class ProductsController < ApplicationController
   #   render json: products.as_json
   # end 
   def show 
-    product_id = params["id"]
-    @product = Product.find_by(id: product_id)
+    @product = Product.find_by(id: params[:id])
     render template: "products/show"
   end 
 
@@ -26,7 +25,8 @@ class ProductsController < ApplicationController
       name: params["name"],
       price: params["price"],
       # image_url: params["image_url"],
-      description: params["description"])
+      description: params["description"],
+    )
     
     if @product.save 
     render template: "products/show"

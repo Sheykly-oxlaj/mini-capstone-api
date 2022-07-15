@@ -8,14 +8,16 @@ GET http://localhost:3000/products.json
 GET http://localhost:3000/products/5.json
 
 
-### Products create
+## Products create
 
-# POST  http://localhost:3000/products.json
-# Content-Type: application/json
+POST  http://localhost:3000/products.json
+Content-Type: application/json
 
-# {"name": "AIR JORDAN 1 X OFF-WHITE, 'Euro Release'", "price": 6690, "image_url": "https://images.unsplash.com/photo-1622831617330-bc799d6236b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80", "description": "Virgil Abloh continued to focus his design attention on the Air Jordan 1 in 2018 by dropping a massively anticipated white colorway. The Air Jordan 1 x Off-White “White” was even harder to come by than the initial “Chicago” colorway that came out in 2017. The white version released exclusively at select retailers in Europe, and instantly became one of the most sought after sneaker releases of the year."
-# }
+{"name": "AIR JORDAN 1 X OFF-WHITE, 'Euro Release'", "price": 6690, "image_url": "https://images.unsplash.com/photo-1622831617330-bc799d6236b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80", "description": "Virgil Abloh continued to focus his design attention on the Air Jordan 1 in 2018 by dropping a massively anticipated white colorway. The Air Jordan 1 x Off-White “White” was even harder to come by than the initial “Chicago” colorway that came out in 2017. The white version released exclusively at select retailers in Europe, and instantly became one of the most sought after sneaker releases of the year."
+}
 
+
+###
 POST  http://localhost:3000/products.json
 Content-Type: application/json
 
@@ -23,12 +25,12 @@ Content-Type: application/json
 }
 
 ### Products update
-# PATCH http://localhost:3000/products/4.json
-# Content-Type: application/json
+PATCH http://localhost:3000/products/4.json
+Content-Type: application/json
 
-# {
-#   "name": "Nike Air Jordan 1 Mid Fearless; Maison Château Rouge"
-# }
+{
+  "name": "Nike Air Jordan 1 Mid Fearless; Maison Château Rouge"
+}
 
 PATCH http://localhost:3000/products/10.json
 Content-Type: application/json
@@ -64,17 +66,38 @@ Content-Type: application/json
   "password": "password"
 }
 
+###
 
-### 
-### Orders create 
-POST http://localhost:3000/orders.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTc4MjIxMjJ9.-AiAKTq8dMyt6GV8Ff4SBrD5I9BG67fUJEQVj7fk028
+@jwt_anna = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTc4MzA4Mjh9.XA17vwp0em4q8xsauqXqA4JJXtx4ZzFrPXZxl1oI9sg
+
+
+###
+@jwt_test = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTc4MzEwNjd9.s-DHJIofJuAf7q7pC1AAaY9kAycyHsvCPXAvKZMhXBU
+
+### Sessions create (login)
+POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "product_id": 2, 
-  "quantity": 2
+  "email": "test@test.com",
+  "password": "password"
+}           
+
+
+
+### Orders create 
+POST http://localhost:3000/orders.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTc4MzA4Mjh9.XA17vwp0em4q8xsauqXqA4JJXtx4ZzFrPXZxl1oI9sg
+Content-Type: application/json
+
+{
+  "product_id": "2", 
+  "quantity": "2"
 }
+
+
+  name: "Test name",                                            
+  email: "test@test.com",
 
 ### ORDERS SHOW
 GET http://localhost:3000/orders/1.json
