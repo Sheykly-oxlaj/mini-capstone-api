@@ -5,6 +5,8 @@ class ProductsController < ApplicationController
     if params[:category]
       category = Category.find_by(name: params[:category])
       @products = category.products
+    else
+      @products = Product.all
     end
     render :index
   end
