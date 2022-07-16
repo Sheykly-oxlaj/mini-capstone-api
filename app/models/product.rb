@@ -38,6 +38,5 @@ class Product < ApplicationRecord
 
   def images
     Image.where(product_id: id)
-    # Image.all
   end
 end
