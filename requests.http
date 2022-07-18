@@ -76,7 +76,7 @@ Content-Type: application/json
 
 
 ################################################################order before_action authenticate_user
-@jwt_anna = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTgyMDU4NjV9.OxxGoxe29HYVwMrCiumB0m-3d-UySDnXze2vruxDlgE
+@jwt_anna = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTgyNTQzNjF9.E2WUQLEPHPso7LNU4ktN9dBZUr_zhSFddTZyv1vyaso
 
 ### Orders create 
 POST http://localhost:3000/orders.json
@@ -91,7 +91,7 @@ Content-Type: application/json
 
 ### ORDERS SHOW 
 GET http://localhost:3000/orders.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTgyMDU4NjV9.OxxGoxe29HYVwMrCiumB0m-3d-UySDnXze2vruxDlgE
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTgyNTQzNjF9.E2WUQLEPHPso7LNU4ktN9dBZUr_zhSFddTZyv1vyaso
 
 
 
@@ -133,3 +133,30 @@ DELETE http://localhost:3000/products/4.json
 
 #Products index
 GET http://localhost:3000/products.json?category=
+
+#############################################################################################################################################
+###carted_products index
+GET http://localhost:3000/carted_products.json
+
+###carted_products show 
+GET http://localhost:3000/carted_products/1.json
+
+###carted_products create
+POST http://localhost:3000/carted_products.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTgyNTQzNjF9.E2WUQLEPHPso7LNU4ktN9dBZUr_zhSFddTZyv1vyaso
+Content-Type: application/json
+
+{
+  "product_id": "5",
+  "quantity": 1
+}
+
+###carted_products update
+POST http://localhost:3000/carted_products.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTgyNTQzNjF9.E2WUQLEPHPso7LNU4ktN9dBZUr_zhSFddTZyv1vyaso
+Content-Type: application/json
+
+{
+  "product_id": "5",
+  "quantity": 1
+}
